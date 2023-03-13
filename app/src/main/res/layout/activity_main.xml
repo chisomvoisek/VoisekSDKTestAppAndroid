@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                tools:ignore="MissingConstraints"
+                >
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="20dp"
+                tools:ignore="MissingConstraints"
+                >
+
+                <Button
+                    android:id="@+id/buttonInitSDK"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="InitSDK"
+                    android:backgroundTint="@color/green"
+                    android:textColor="@color/white"
+                    ></Button>
+
+                <EditText
+                    android:id="@+id/editTextPhoneNumber"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone Number"
+                    android:inputType="phone" />
+
+                <Button
+                    android:id="@+id/buttonSendRegistrationCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Send Register Code"
+                    android:background="@drawable/btn_shape_round"
+                    ></Button>
+
+                <EditText
+                    android:id="@+id/ediTextVerifyCode"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Code"
+                    android:inputType="phone" />
+
+                <Button
+                    android:id="@+id/buttonVerify"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Verify"
+                    android:background="@drawable/btn_shape_round"
+                    ></Button>
+
+                <Button
+                    android:id="@+id/buttonEnableAntiVishing"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Enable AntiVishing"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btn_shape_round"
+                    ></Button>
+
+
+
+                <Button
+                    android:id="@+id/buttonEnableAccountTakeOver"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Enable Account Takeover"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btn_shape_round"
+
+                    ></Button>
+
+                <Button
+                    android:id="@+id/buttonManualCheck"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Manual Check"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btn_shape_round"
+
+                    ></Button>
+
+                <Button
+                    android:id="@+id/buttonCallOnGoing"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Call On Going"
+                    ></Button>
+
+                <EditText
+                    android:id="@+id/editTextMessage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Message" />
+
+                <Button
+                    android:id="@+id/buttonSMSCheck"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="SMS Check"
+                    android:background="@drawable/btn_shape_round"
+                    ></Button>
+
+                <Button
+                    android:id="@+id/buttonDeleteAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Delete Account"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/maroon"
+
+                    ></Button>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
